@@ -441,6 +441,7 @@ public class Employee {
 
 
 Let's assume we have 4 employees:    
+
 - #1 is supervised by #3.
 - #2 is supervised by #3.
 - #3 is supervised by #4.
