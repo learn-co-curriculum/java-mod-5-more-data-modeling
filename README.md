@@ -370,12 +370,15 @@ The relationship is one-to-many between `Employee` and `Employee`:
 The `Employee` entity is on both the owning (many) and non-owning (one) side of the relationship!
 
 - Each employee is supervised by at most one employee.   
+
   ```java
   @ManyToOne
   private Employee supervisor;
   ```
+  
 - An employee may supervise many employees (labeled reportees).  
   Note the collection will be empty for employees who are not supervisors.   
+
   ```java
   @OneToMany(mappedBy = "supervisor")
   private Set<Employee> reportees = new HashSet<>();
